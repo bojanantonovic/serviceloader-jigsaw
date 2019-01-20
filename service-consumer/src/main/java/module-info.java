@@ -1,8 +1,9 @@
 import disneyworld.service.DisneyWorldMember;
 
 module serviceconsumer {
+	requires serviceinterface;
 
-	requires disneyservices;
+	requires serviceimplementations;
 
 	uses DisneyWorldMember;
 }
